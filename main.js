@@ -8,8 +8,8 @@ function validateName () {
 
 
   if(!re.test(name.value)) {
-    
+    document.querySelector('.invalid').style.display = 'block';
   } else {
-    console.log('pass');
+    document.querySelector('.invalid').style.display = 'none';
   }
 }
