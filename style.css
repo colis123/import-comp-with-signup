@@ -21,6 +21,7 @@
   text-align: right;
   margin-right: .25rem;
   font-style: italic;
+  margin-top: -.6rem !important;
 }
 
 .bold-text {
