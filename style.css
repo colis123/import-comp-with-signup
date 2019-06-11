@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
+:root {
+  --red: hsl(0, 100%, 74%);
+  --green: hsl(154, 59%, 51%);
+  --blue: hsl(248, 32%, 49%);
+  --dark-blue: hsl(249, 10%, 26%);
+  --grayish-blue: hsl(246, 25%, 77%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Utilites */
+.invalid {
+  color: rgba(204, 54, 54, 0.7);
+  font-size: 12px;
+  text-align: right;
+  margin-right: .25rem;
+  font-style: italic;
+}
+
+.bold-text {
+  font-weight: bold;
+  font-size: 17px;
+}
+
+.red-text {
+  color: rgba(204, 54, 54, 0.7);
+}
+
+.btn {
+  background: var(--green);
+  border-radius: 3px;
+  padding: .6rem;
+  text-decoration: none;
+  font-size: 15px;
+  color: #fff;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, .5);
+  text-transform: uppercase;
+}
+
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: var(--red) url(./images/bg-intro-mobile.png) no-repeat center center/cover;
+  color: #fff;
+  text-align: center;
+  height: 100vh;
+}
+
+/* Grid Container */
+.grid-container {
+  /* height: 100%; */
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 5rem 2.5rem;
+  justify-items: center;
+  grid-gap: 4.5rem;
+}
+
+/* Header */
+.grid-container .header {
+  display: grid;
+  grid-gap: 30px;
+}
+
+.grid-container .header h1 {
+  font-weight: 900;
+  line-height: 1.2;
+}
+
+/* Section */
+section {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1.25rem;
+}
+
+section .try {
+  background: var(--blue);
+  padding: 1rem 1rem;
+  border-radius: 8px;
+  font-size: 15px;
+  box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.3);
+}
+
+section .form {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: .75rem;
+  padding: 1rem 1.2rem;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 7px 3px rgba(0, 0, 0, 0.3);
+}
+
+section .form input {
+  padding: .80rem;
+  border-radius: 3px;
+  border: solid 1px var(--grayish-blue);
+  color: #333;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+section .form input::placeholder {
+  font-size: 13px;
+  font-weight: bold;
+}
+
+section .form .form-text  {
+  color: var(--grayish-blue);
+  font-size: .7rem;
+}
+
+section .form .form-text a {
+  text-decoration: none;
+}
+
+@media screen and (min-width: 700px) {
+  .grid-container {
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    height: 100vh;
+  }
+  
+}
+
+
+
+
