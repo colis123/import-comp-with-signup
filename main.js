@@ -25,3 +25,26 @@ function validateLastname() {
     document.querySelector('.invalidL').style.display = 'none';
   }
 }
+
+
+function validateEmail() {
+  const email = document.querySelector('#email');
+  const re = /^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$/;
+
+  if(!re.test(email.value)) {
+    document.querySelector('.invalidE').style.display = 'block';
+  } else {
+    document.querySelector('.invalidE').style.display = 'none';
+  }
+}
+
+function validatePassword() {
+  const password = document.querySelector('#password');
+  const re = /([^\s])/;
+
+  if(!re.test(password.value)) {
+    document.querySelector('.invalidP').style.display = 'block';
+  } else {
+    document.querySelector('.invalidP').style.display = 'none';
+  }
+}
