@@ -15,7 +15,7 @@
 }
 
 /* Utilites */
-.invalid {
+.invalid, .invalidL, .invalidE, .invalidP {
   display: none;
   color: rgba(204, 54, 54, 0.7);
   font-size: 12px;
@@ -23,7 +23,17 @@
   margin-right: .25rem;
   font-style: italic;
   margin-top: -.6rem !important;
+  animation: 1s invalid forwards;
+  opacity: 0;
 }
+
+@keyframes invalid {
+  to {
+    opacity: 1;
+  }
+}
+
+
 
 .bold-text {
   font-weight: bold;
