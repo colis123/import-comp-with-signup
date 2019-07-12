@@ -44,7 +44,9 @@ function validatePassword() {
 
   if(!re.test(password.value)) {
     document.querySelector('.invalidP').style.display = 'block';
+    
   } else {
     document.querySelector('.invalidP').style.display = 'none';
   }
 }
+

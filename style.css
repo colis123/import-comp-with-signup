@@ -51,12 +51,13 @@
   color: #fff;
   box-shadow: 1px 1px 5px rgba(0, 0, 0, .5);
   text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 
 body {
   font-family: 'Poppins', sans-serif;
-  background: var(--red) url(./images/bg-intro-mobile.png) no-repeat center center/cover;
+  background: var(--red) url(./images/bg-intro-desktop.png) no-repeat center center/cover;
   color: #fff;
   text-align: center;
   height: 100vh;
@@ -81,6 +82,7 @@ body {
 .grid-container .header h1 {
   font-weight: 900;
   line-height: 1.2;
+  font-size: 40px;
 }
 
 /* Section */
@@ -137,6 +139,10 @@ section .form .form-text a {
     align-items: center;
     justify-items: center;
     height: 100vh;
+  }
+
+  body {
+    background: var(--red) url(./images/bg-intro-mobile.png) no-repeat center center/cover;
   }
   
 }
